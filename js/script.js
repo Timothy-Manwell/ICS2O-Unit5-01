@@ -15,21 +15,21 @@ if (navigator.serviceWorker) {
   })
 }
 
-const randomNumber = Math.floor(Math.random() * 6) + 1  // returns a random integer from 1 to 6 into variable "randomNumber" 
+const randomNumber = Math.floor(Math.random() * 6) + 1 // returns a random integer from 1 to 6 into variable "randomNumber"
 
 /**
  * This function updates the slider value.
  */
- function updateSliderValue(valueFromSlider) {
+function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 
   // process
   if (valueFromSlider == randomNumber) {
-    document.getElementById("answer").innerHTML = "The answer was " + randomNumber + " you got it!"
+    document.getElementById("answer").innerHTML =
+      "The answer was " + randomNumber + " you got it!"
   }
 
   if (valueFromSlider != randomNumber) {
     document.getElementById("answer").innerHTML = "Wrong answer. Try again"
   }
 }
-
