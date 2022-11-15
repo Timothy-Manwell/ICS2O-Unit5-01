@@ -15,7 +15,10 @@ if (navigator.serviceWorker) {
   })
 }
 
-const randomNumber = Math.floor(Math.random() * 6) + 1 // returns a random integer from 1 to 6 into variable "randomNumber"
+/**
+ * This function generates a random number between 1 and 6
+ */
+const randomNumber = Math.floor(Math.random() * 6) + 1  // returns a random integer from 1 to 6 into variable "randomNumber" 
 
 /**
  * This function updates the slider value.
